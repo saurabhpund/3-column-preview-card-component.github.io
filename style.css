@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+body {
+  min-height: 100vh;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  background-color: #f2f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  width: 65%;
+  display: -ms-grid;
+  display: grid;
+  
+      grid-template-columns: repeat(3, 1fr);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 75em) {
+  .container {
+    width: 40%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .container {
+    width: 80%;
+  }
+}
+
+.item {
+  padding: 4rem;
+  color: rgba(255, 255, 255, 0.75);
+  display: -ms-grid;
+  display: grid;
+  gap: 3rem;
+}
+
+@media only screen and (max-width: 75em) {
+  .item {
+    gap: 0;
+  }
+}
+
+.item--1 {
+  background-color: #e38826;
+}
+
+.item--2 {
+  background-color: #006970;
+}
+
+.item--3 {
+  background-color: #004241;
+}
+
+.heading__1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f2f2f2;
+  font-size: 3.5rem;
+}
+
+.text {
+  width: 90%;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-bottom: 6rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .text {
+    width: 100%;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.btn {
+  border: none;
+  background-color: #f2f2f2;
+  padding: 1.5rem 4rem;
+  border-radius: 100px;
+  text-transform: capitalize;
+  font-family: inherit;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  border: 1px solid #f2f2f2;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.btn:hover {
+  background-color: inherit;
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+}
+
+.btn--1 {
+  color: #e38826;
+}
+
+.btn--2 {
+  color: #006970;
+}
+
+.btn--3 {
+  color: #004241;
+}
+/*# sourceMappingURL=style.css.map */
